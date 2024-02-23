@@ -38,6 +38,10 @@ The autoresizing behavior is now standardized across all platforms.
 If your app uses `BrowserView.setAutoResize` to do anything more complex than making a BrowserView fill the entire window, it's likely you already had custom logic in place to handle this difference in behavior on macOS.
 If so, that logic will no longer be needed in Electron 30 as autoresizing behavior is consistent.
 
+### Removed: `process.getIOCounters()`
+
+Chromium has removed access to this information.
+
 ## Planned Breaking API Changes (29.0)
 
 ### Behavior Changed: `ipcRenderer` can no longer be sent over the `contextBridge`
